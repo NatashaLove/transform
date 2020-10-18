@@ -1,0 +1,56 @@
+h2 {
+    background-color: #2a9d8f;
+    border: 5px solid #226653;
+    color: #eae2b7;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+h2:nth-of-type(2n){
+    background-color: #e9c46a;
+
+}
+h2:nth-of-type(3n){
+    background-color: #f4a261;
+
+}
+h2:nth-of-type(4n){
+    background-color: #e76f51;
+
+}
+/*
+translate , scale etc - Doesn't need ',' between X and Y...
+*/
+section:first-of-type {
+    scale: 1.5;
+}
+
+section:first-of-type h2:nth-of-type(1) {
+    transform: rotate(15deg);
+    transform-origin: bottom left;
+    translate: 40px -20px;
+}
+section:first-of-type h2:nth-of-type(3) {
+  rotate: -10deg;
+  scale: 2 0.35;
+  color: black;
+  border-radius: 50% 10% 5% ;
+
+}
+section:nth-of-type(2) h2:first-of-type {
+    rotate: 10deg;
+    scale: 2 0.35;
+    color: #5c210680;
+    border-radius: 50%;
+  }
+  section:nth-of-type(2) h2:nth-of-type(2n) {
+    rotate: 10deg;
+    scale: 1.2 0.7;
+    color: hsla(194, 88%, 19%, 0.502);
+    transform: skewX(20deg);
+  }
